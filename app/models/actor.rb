@@ -8,6 +8,9 @@ class Actor < ActiveRecord::Base
     end 
     
     def list_roles
-      characters.collect do |c|
+      characters.map do |c|
+        character = c.name 
+        show = c.show
+        
         
 end
