@@ -11,6 +11,8 @@ class Actor < ActiveRecord::Base
       characters.map do |c|
         character = c.name 
         show = c.show.name 
+        
+         "#{character} - #{show}"
       end 
     end 
         
